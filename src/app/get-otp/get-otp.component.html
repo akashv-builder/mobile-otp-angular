@@ -1,0 +1,16 @@
+<nav class="navbar navbar-light bg-light" id="nav">
+  <a class="navbar-brand" href="#">
+    <img src="../assets/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">Your phone messaging App. Get your Otp from here.
+  </a>
+</nav>
+<hr>
+
+<form>
+  <input type="text" placeholder="Enter your number here" [(ngModel)]="searchInput" name="search"/><br>
+  <button type="button" class="btn btn-default" (click)="searchOTP()">Go!</button>
+</form>
+<div class="yourOtp">
+  Your OTP is: <br>
+  <hr class="rule">  
+{{otpList}}
+</div>
